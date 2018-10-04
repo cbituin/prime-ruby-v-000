@@ -7,7 +7,7 @@ def prime?(number)
   #returns false for non-prime numbers
   divisorlist = [2, 3, 5, 7, 11]
   divisorlist.any? do |divisor|
-    number > 1 && number % divisor != 0
+   number % divisor != 0 && number > 1
   end
 end
 
