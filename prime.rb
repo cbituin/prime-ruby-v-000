@@ -7,15 +7,10 @@ def prime?(number)
   #returns false for non-prime numbers
   divisibility = [2, 3, 5, 7, 11]
   return false if number <= 1
-  if divisibility.include?(number)
-    true
-  else 
-    divisibility.any? do |divisor|
+  divisibility.any? do |divisor|
+    return true if number === divisor
     return false if number % divisor === 0
-    end
   end
-
-
 end
 
 # calculate pi to 10k digits
