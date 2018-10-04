@@ -6,10 +6,13 @@ def prime?(number)
   #returns true for prime numbers
   #returns false for non-prime numbers
   divisibility = [2, 3, 5, 7, 11]
-  return false if number <= 1
-  divisibility.any? do |divisor|
+  if number <= 1
+    false
+  else 
+    divisibility.any? do |divisor|
     return true if number === divisor
     return false if number % divisor === 0
+    end
   end
 end
 
