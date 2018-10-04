@@ -8,7 +8,9 @@ def prime?(number)
   divisibility = [2, 3, 5, 7, 11]
   divisibility.any? do |divisor|
     return true if number === divisor
-    if number % divisor === 0 || number <= 1
+    if number <= 1
+      false
+    else if number % divisor === 0
       false
     else
       return true
