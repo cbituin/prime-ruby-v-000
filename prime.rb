@@ -10,7 +10,7 @@ def prime?(number)
     return true if number === divisor
     if number <= 1
       false
-    else if number % divisor === 0
+    elsif number % divisor === 0
       false
     else
       return true
