@@ -5,8 +5,10 @@ require 'bigdecimal/math'
 def prime?(number)
   #returns true for prime numbers
   #returns false for non-prime numbers
-  divisor = [2, 3, 5, 7, 11]
-  
+  divisorlist = [2, 3, 5, 7, 11]
+  divisorlist.any? do |divisor|
+    number % divisor != 0
+  end
 end
 
 # calculate pi to 10k digits
