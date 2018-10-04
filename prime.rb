@@ -5,7 +5,7 @@ require 'bigdecimal/math'
 def prime?(number)
   #returns true for prime numbers
   #returns false for non-prime numbers
-  divisibility = [2, 3, 5, 7, 11]
+  divisor = [2, 3, 5, 7, 11]
   
 end
 
