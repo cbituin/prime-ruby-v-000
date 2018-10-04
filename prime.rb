@@ -6,16 +6,7 @@ def prime?(number)
   #returns true for prime numbers
   #returns false for non-prime numbers
   divisibility = [2, 3, 5, 7, 11]
-  divisibility.any? do |divisor|
-    return true if number === divisor
-    if number <= 1
-      false
-    elsif number % divisor === 0
-      false
-    else
-      return true
-    end
-  end
+  
 end
 
 # calculate pi to 10k digits
